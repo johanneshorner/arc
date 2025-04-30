@@ -7,7 +7,7 @@
 
 rustPlatform.buildRustPackage {
   pname = "arc";
-  version = "0.1.0";
+  version = "0.2.0";
 
   nativeBuildInputs = [
     installShellFiles
@@ -19,7 +19,7 @@ rustPlatform.buildRustPackage {
   ];
 
   src = ./..;
-  cargoHash = "sha256-9Ih4M/sxBJ92ZOl2n9QzQ2S0UiuCQwW5EEqCw2yQDl4=";
+  cargoHash = "sha256-TEnHrmNw0AuXNEP1W0vlVqtAbQ43fiZP9NblL9xPsNk=";
 
   postInstall = ''
     installShellCompletion --cmd arc \
